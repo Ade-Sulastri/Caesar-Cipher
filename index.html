@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Caesar Cipher</title>
 </head>
+
 <body>
-  <h1>Caesar Cipher</h1>
+  <header>
+    <h1>Caesar Cipher</h1>
+  </header>
+  <main class="container main">
+    <div class="section-input">
+      <section class="card-1">
+        <h3>Plain text</h3>
+        <textarea class="input" id="input-plaintext" placeholder="Input Plaintext"></textarea>
+      </section>
+      <span class="swap">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M16 13v-1.5h-6v-2h6V8l3 2.5zm-8 4v-1.5h6v-2H8V12l-3 2.5z"/></svg>
+      </span>
+      <section class="card-2">
+        <h3>Cypertext</h3>
+        <textarea class="input" placeholder="Input Cypertext"></textarea>
+      </section>
+    </div>
+    <div class="info">
+      <section>
+        <h5>Alphabet</h5>
+        <p>abcdefghijklmnopqrstuvwxyz</p>
+        <hr>
+        <h5>Charcter</h5> 
+      </section>
+    </div>
+  </main>
 </body>
+
 </html>
