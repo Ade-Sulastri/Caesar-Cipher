@@ -1,21 +1,29 @@
 :root {
   --bg: #F5FAFF;
 }
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+</style>
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--bg);
+  font-family: "Roboto", sans-serif;
 }
 header {
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: white;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
 }
-
+header h2 {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
 .container {
-  margin: 50px 50px 0 50px;
+  margin: 30px 50px 0 50px;
 }
 
 .main {
@@ -40,6 +48,10 @@ header {
   padding: 0 10px 5px 10px;
   background-color: white;
 }
+.card-1 h3, .card-2 h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
 
 .input {
   width: 100%;
@@ -48,9 +60,10 @@ header {
   padding: 10px;
   border-radius: 5px;
   height: 100px;
+  outline:none;
 }
 
-.swap {
+.swap svg{
   cursor: pointer;
 }
 
@@ -65,4 +78,103 @@ header {
   border: 1px solid #3A9DC2;
   padding: 0 15px;
   margin-top: 30px;
+}
+
+.item-info {
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  align-items: center;
+  gap: 5;
+}
+
+.item-info h4, p {
+  margin: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.item-info input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid;
+  outline: none;
+  /* box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1); */
+}
+
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color : rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btnModal {
+  cursor: pointer;
+}
+.algoritma {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.algoritma button {
+  font-size: 14px;
+  padding: 10px 10px;
+  background: white;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid #3A9DC2;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.algoritma button a {
+  text-decoration: none;
+  color: black;
+}
+
+.algoritma button:hover, .algoritma button a:hover {
+  background: #3A9DC2;
+  color: white;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  background: #E0F4FF;
+  font-family: "Roboto", sans-serif;
 }
