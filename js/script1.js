@@ -9,7 +9,7 @@ const homophonicSubstitution = {
   'g': ['g'],
   'h': ['h'],
   'i': ['i'],
-  'j': ['j'],
+  'j': ['a'],
   'k': ['k'],
   'l': ['l'],
   'm': ['m'],
@@ -84,3 +84,22 @@ inputCiphertext.addEventListener('input', () => {
   const shiftValue = parseInt(inputShift.value, 10);
   inputPlaintext.value = decryptCaesarHomophonic(inputCiphertext.value, shiftValue);
 });
+
+// OPEN MODAL
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("btnModal");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
