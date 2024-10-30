@@ -23,18 +23,23 @@
       </span>
       <section class="card-2">
         <h3>Cypertext</h3>
-        <textarea class="input" placeholder="Input Cypertext"></textarea>
+        <textarea class="input" id="input-ciphertext" placeholder="Input Cypertext"></textarea>
       </section>
     </div>
+    
     <div class="info">
       <section>
-        <h5>Alphabet</h5>
+        <h4>Shift</h4>
+        <input type="number" id="input-shift" value="3" min="0" max="25" step="1">
+        <h4>Alphabet</h4>
         <p>abcdefghijklmnopqrstuvwxyz</p>
         <hr>
-        <h5>Charcter</h5> 
+        <h4>Character</h4>
+        <p id="character-display"></p>
       </section>
     </div>
   </main>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
